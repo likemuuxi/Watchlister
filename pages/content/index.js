@@ -39,7 +39,7 @@ function Content({ APPLICATION_URL, TMDB_API_KEY, COUNTRY_CODE }) {
     async function fetchData() {
       // FETCH DATA FROM TMDB
       let response = await fetch(
-        `https://api.themoviedb.org/3/${type}/${id}?api_key=${TMDB_API_KEY}&language=en-US`
+        `https://api.themoviedb.org/3/${type}/${id}?api_key=${TMDB_API_KEY}&language=zh_CN`
       );
       let data = await response.json();
       console.log(data);
